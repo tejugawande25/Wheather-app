@@ -5,7 +5,7 @@ import humidityImage from "./images/humidity.png";
 import windImage from "./images/wind.png";
 import cloudImage from "./images/cloudImage.png";
 
-function Dashboard() {
+function Dashboard(props) {
   const [city, setCity] = useState("delhi");
   const [input, setInput] = useState("");
   const [humidity, setHumidity] = useState("");
@@ -82,7 +82,7 @@ function Dashboard() {
             </div>
           </div>
           <div style={{marginTop:"15px"}}>
-            <a href="/records">Previous</a>
+            <a href="/records" style={{textDecoration:"none",color:"white"}}>Previous</a>
           </div>
         </div>
       </div>
